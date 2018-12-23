@@ -1,5 +1,5 @@
-let numberOfValues = 500;
-let valuesRange = 10;
+let numberOfValues = 50;
+let valuesRange = 50;
 valuesArray = [];
 
 
@@ -9,6 +9,6 @@ window.onload = function() {
         valuesArray.push(number);
     }
     document.getElementById("generate").onclick = function(){
-        document.getElementById("test").innerHTML = valuesArray;
+        document.getElementById("test").innerHTML = insertionSort(valuesArray);
     }
 }
