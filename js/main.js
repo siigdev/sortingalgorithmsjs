@@ -1,5 +1,5 @@
-let numberOfValues = 50;
-let valuesRange = 50;
+let numberOfValues = 500;
+let valuesRange = 500;
 valuesArray = [];
 
 
@@ -8,7 +8,12 @@ window.onload = function() {
         let number = Math.floor((Math.random()*valuesRange)+0);
         valuesArray.push(number);
     }
+    
     document.getElementById("generate").onclick = function(){
+        var start = new Date().getTime();
         document.getElementById("test").innerHTML = selectionSort(valuesArray);
+        var stop = new Date().getTime();
+        var time = stop-start;
+        alert(time + "ms");    
     }
 }
