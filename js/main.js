@@ -1,5 +1,5 @@
-let numberOfValues = 500;
-let valuesRange = 500;
+let numberOfValues = 5000;
+let valuesRange = 5000;
 valuesArray = [];
 
 
@@ -14,6 +14,6 @@ window.onload = function() {
         document.getElementById("test").innerHTML = selectionSort(valuesArray);
         var stop = new Date().getTime();
         var time = stop-start;
-        alert(time + "ms");    
+        document.getElementById("time").innerHTML = time + "ms";   
     }
 }
