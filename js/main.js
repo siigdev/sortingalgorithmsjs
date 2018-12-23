@@ -1,5 +1,5 @@
-let numberOfValues = 5000;
-let valuesRange = 5000;
+let numberOfValues = 50;
+let valuesRange = 50;
 valuesArray = [];
 
 
@@ -11,7 +11,7 @@ window.onload = function() {
     
     document.getElementById("generate").onclick = function(){
         var start = new Date().getTime();
-        document.getElementById("test").innerHTML = selectionSort(valuesArray);
+        document.getElementById("test").innerHTML = bubbleSort(valuesArray);
         var stop = new Date().getTime();
         var time = stop-start;
         document.getElementById("time").innerHTML = time + "ms";   
