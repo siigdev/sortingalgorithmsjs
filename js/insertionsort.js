@@ -4,9 +4,10 @@
 // Best case: O(n)
 // Avg case: O(n^2)
 
-var i = 1;
-var j;
+
 function insertionSort(valuesArray){
+    let i = 1;
+    let j;
     while (i < valuesArray.length){
         j = i;
         while (j > 0 && valuesArray[j-1] > valuesArray[j]){

@@ -9,6 +9,6 @@ window.onload = function() {
         valuesArray.push(number);
     }
     document.getElementById("generate").onclick = function(){
-        document.getElementById("test").innerHTML = insertionSort(valuesArray);
+        document.getElementById("test").innerHTML = selectionSort(valuesArray);
     }
 }
