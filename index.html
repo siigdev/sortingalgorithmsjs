@@ -21,8 +21,7 @@
   </head>
 
   <body>
-    <form>
-      <select>
+      <select id="sortMethod">
         <option value="insertionsort">Insertion</option>
         <option value="selectionsort">Selection</option>
         <option value="bubblesort">Bubble</option>
@@ -32,11 +31,10 @@
         <option value="radixsort">Radix</option>
       </select>
       Array size:
-      <input type="number" name="arraySize" min="1" max="10000" step="1" value="100"/>
+      <input type="number" id="arraySize" min="1" max="100000" step="1" value="100"/>
       Value range:
-      <input type="number" name="valueRange" min="1" max="10000" step="1" value="100"/>
+      <input type="number" id="valueRange" min="1" max="100000" step="1" value="100"/>
       <input id="generate" type="submit" value="Submit"/>
-    </form>
 
     <div id="test"></div>
     <div id="time"></div>
