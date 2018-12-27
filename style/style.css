@@ -1,0 +1,34 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type="text"],
+select,
+input[type="number"] {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form {
+  margin: 0 auto;
+  width: 350px;
+}
+input[type="submit"] {
+  width: 100%;
+  font-size: 14px;
+  background-color: #67B95A;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #58AE4A;
+}

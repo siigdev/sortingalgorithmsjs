@@ -1,31 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Sorting algorithms</title>
-  <meta name="description" content="Search algorithms in plain Javascript">
-  <meta name="author" content="Siigdev">
+    <title>Sorting algorithms</title>
+    <meta name="description" content="Sorting algorithms in plain Javascript" />
+    <meta name="author" content="Siigdev" />
 
-  <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css" />
 
-  <script src="js/main.js"></script>
-  <script src="js/insertionsort.js"></script>
-  <script src="js/selectionsort.js"></script>
-  <script src="js/bubblesort.js"></script>
-  <script src="js/heapsort.js"></script>
-  <script src="js/mergesort.js"></script>
-  <script src="js/quicksort.js"></script>
-  <script src="js/radixsort.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/insertionsort.js"></script>
+    <script src="js/selectionsort.js"></script>
+    <script src="js/bubblesort.js"></script>
+    <script src="js/heapsort.js"></script>
+    <script src="js/mergesort.js"></script>
+    <script src="js/quicksort.js"></script>
+    <script src="js/radixsort.js"></script>
+  </head>
 
-</head>
+  <body>
+    <form>
+      <select>
+        <option value="insertionsort">Insertion</option>
+        <option value="selectionsort">Selection</option>
+        <option value="bubblesort">Bubble</option>
+        <option value="heapsort">Heap</option>
+        <option value="mergesort">Merge</option>
+        <option value="quicksort">Quick</option>
+        <option value="radixsort">Radix</option>
+      </select>
+      Array size:
+      <input type="number" name="arraySize" min="1" max="10000" step="1" value="100"/>
+      Value range:
+      <input type="number" name="valueRange" min="1" max="10000" step="1" value="100"/>
+      <input id="generate" type="submit" value="Submit"/>
+    </form>
 
-<body>
-  
-  <div id="test"></div>
-  <div id="time"></div>
-  <button id="generate" type="submit">Hej</button>
-
-</body>
+    <div id="test"></div>
+    <div id="time"></div>
+  </body>
 </html>
