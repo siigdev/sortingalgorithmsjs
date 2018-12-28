@@ -1,3 +1,5 @@
+import { swap } from "./main.js";
+
 // HEAP SORT
 // https://en.wikipedia.org/wiki/Heapsort
 // Worst case: O(n log n)
@@ -8,9 +10,7 @@ export function heapSort(valuesArray){
     buildHeap(valuesArray, valuesArray.length);
 
     for (var i = valuesArray.length-1; i > 0; i--){
-        let a = valuesArray[0];
-        valuesArray[0] = valuesArray[i];
-        valuesArray[i] = a;
+        swap(0, i);
         heapify(valuesArray, 0, i-1)
     }
     return valuesArray;
@@ -36,9 +36,7 @@ function heapify(valuesArray, i, n){
     if (i == max) {
         break;
     }
-    let b = valuesArray[i];
-    valuesArray[i] = valuesArray[max];
-    valuesArray[max] = b;
+    swap(i, max);
     i = max;
     }
 }

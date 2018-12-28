@@ -1,3 +1,5 @@
+import { swap } from "./main.js";
+
 // QUICK SORT
 // https://en.wikipedia.org/wiki/Quicksort
 // Worst case: O(N^2)
@@ -22,15 +24,10 @@ function partition(valuesArray, pivot, low, high){
 
     for (var i = low; i < high; i++){
         if(valuesArray[i] < pivotvalue) {
-            let a = valuesArray[i];
-            valuesArray[i] = valuesArray[partitionvalue];
-            valuesArray[partitionvalue] = a;
+            swap(i, partitionvalue);
             partitionvalue++;
         }
     }
-    let b = high;
-    high = valuesArray[partitionvalue];
-    valuesArray[partitionvalue] = b;
-    
+    swap(high, partitionvalue);    
     return partitionvalue;
 }

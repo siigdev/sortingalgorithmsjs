@@ -1,3 +1,5 @@
+import { swap } from "./main.js";
+
 // INSERTION SORT
 // https://en.wikipedia.org/wiki/Insertion_sort
 // Worst case: O(n^2)
@@ -10,9 +12,7 @@ export function insertionSort(valuesArray){
     while (i < valuesArray.length){
         j = i;
         while (j > 0 && valuesArray[j-1] > valuesArray[j]){
-            var a = valuesArray[j];
-            valuesArray[j] = valuesArray[j-1];
-            valuesArray[j-1] = a;
+            swap(j, j-1);
             j = j-1;
         }
         i = i+1
