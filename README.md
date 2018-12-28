@@ -7,4 +7,4 @@
 * Radix Sort
 * Heap Sort
 
-Run the program using a webserver or delete any module import/exports.
+Run the program using a webserver or offline by deleting all module import/exports.
