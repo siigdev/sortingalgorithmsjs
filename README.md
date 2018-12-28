@@ -6,3 +6,5 @@
 * Bubble Sort
 * Radix Sort
 * Heap Sort
+
+Run the program using a webserver or delete any module import/exports.
