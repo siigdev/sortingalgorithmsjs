@@ -27,13 +27,13 @@ function merge(x, y) {
     return result;
 }
 
-function mergeSort(valuesArray) {
+export function mergeSort(valuesArray) {
     if (valuesArray.length <= 1) {
         return valuesArray;
     }
     let x = [];
     let y = [];
-    for (i = 0; i < valuesArray.length; i++){
+    for (let i = 0; i < valuesArray.length; i++){
         if (i < valuesArray.length/2) {
             x.push(valuesArray[i]);
         }

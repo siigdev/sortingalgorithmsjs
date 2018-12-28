@@ -4,7 +4,7 @@
 // Best case: O(n log n)
 // Avg case: O(n log n)
 
-function heapSort(valuesArray){
+export function heapSort(valuesArray){
     buildHeap(valuesArray, valuesArray.length);
 
     for (var i = valuesArray.length-1; i > 0; i--){

@@ -5,12 +5,12 @@
 // Avg case: O(n^2 )
 
 
-function selectionSort(valuesArray) {
+export function selectionSort(valuesArray) {
     let j;
     let smallest;
     for (j=0; j < valuesArray.length-1; j++){
         smallest = j;
-        for (i = j+1; i < valuesArray.length; i++){
+        for (let i = j+1; i < valuesArray.length; i++){
             if (valuesArray[i] < valuesArray[smallest]){
                 smallest = i;
             }

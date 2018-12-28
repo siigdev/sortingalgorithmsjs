@@ -4,8 +4,7 @@
 // Best case: O(n)
 // Avg case: O(n^2)
 
-
-function insertionSort(valuesArray){
+export function insertionSort(valuesArray){
     let i = 1;
     let j;
     while (i < valuesArray.length){
@@ -20,3 +19,4 @@ function insertionSort(valuesArray){
     }
     return valuesArray;
 }
+

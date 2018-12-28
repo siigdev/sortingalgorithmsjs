@@ -4,9 +4,9 @@
 // Best case: O(n)
 // Avg case: O(n^2)
 
-function bubbleSort(valuesArray) {
-    for (i = 0; i < valuesArray.length; i++){
-        for (j = 0; j < valuesArray.length - 1; j++) {
+export function bubbleSort(valuesArray) {
+    for (let i = 0; i < valuesArray.length; i++){
+        for (let j = 0; j < valuesArray.length - 1; j++) {
             if (valuesArray[j] > valuesArray[j + 1]) {
                 var a = valuesArray[j];
                 valuesArray[j] = valuesArray[j + 1];

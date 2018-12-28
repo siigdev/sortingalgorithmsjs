@@ -1,5 +1,10 @@
-
-
+import {insertionSort} from './insertionsort.js';
+import {bubbleSort} from './bubblesort.js';
+import {heapSort} from './heapsort.js';
+import {mergeSort} from './mergesort.js';
+import {quickSort} from './quicksort.js';
+//import {radixSort} from './radixsort.js';
+import {selectionSort} from './selectionsort.js';
 
 window.onload = function() {
     document.getElementById("generate").onclick = function(){

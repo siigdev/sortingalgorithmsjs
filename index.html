@@ -6,21 +6,15 @@
 
     <title>Sorting algorithms</title>
     <meta name="description" content="Sorting algorithms in plain Javascript" />
-    <meta name="author" content="Siigdev" />
+    <meta name="author" content="siigdev" />
 
     <link rel="stylesheet" href="style/style.css" />
 
-    <script src="js/main.js"></script>
-    <script src="js/insertionsort.js"></script>
-    <script src="js/selectionsort.js"></script>
-    <script src="js/bubblesort.js"></script>
-    <script src="js/heapsort.js"></script>
-    <script src="js/mergesort.js"></script>
-    <script src="js/quicksort.js"></script>
-    <script src="js/radixsort.js"></script>
+    <script type="module" src="js/main.js"></script>
   </head>
 
   <body>
+    <div id="container">
       <select id="sortMethod">
         <option value="insertionsort">Insertion</option>
         <option value="selectionsort">Selection</option>
@@ -34,9 +28,10 @@
       <input type="number" id="arraySize" min="1" max="100000" step="1" value="100"/>
       Value range:
       <input type="number" id="valueRange" min="1" max="100000" step="1" value="100"/>
-      <input id="generate" type="submit" value="Submit"/>
+      <input type="submit" id="generate"  value="Submit"/>
 
     <div id="test"></div>
     <div id="time"></div>
+  </div>
   </body>
 </html>

@@ -4,7 +4,7 @@
 // Best case: O(n log n)
 // Avg case: O(n log n)
 
-function quickSort(valuesArray, low, high) {
+export function quickSort(valuesArray, low, high) {
     var pivot;
     var partitionvalue;
     if (low < high){
