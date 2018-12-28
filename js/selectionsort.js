@@ -1,3 +1,5 @@
+import { swap } from "./main.js";
+
 // SELECTION SORT
 // https://en.wikipedia.org/wiki/Selection_sort
 // Worst case: O(n^2)
@@ -15,9 +17,7 @@ export function selectionSort(valuesArray) {
                 smallest = i;
             }
         }
-        var a = valuesArray[j];
-        valuesArray[j] = valuesArray[smallest];
-        valuesArray[smallest] = a;
+        swap(j, smallest);
     }
     return valuesArray;
 

@@ -6,9 +6,10 @@ import {quickSort} from './quicksort.js';
 //import {radixSort} from './radixsort.js';
 import {selectionSort} from './selectionsort.js';
 
+var valuesArray = [];
 window.onload = function() {
     document.getElementById("generate").onclick = function(){
-        var valuesArray = [];
+        valuesArray = [];
         let numberOfValues = document.getElementById("arraySize").value;
         let valuesRange = document.getElementById("valueRange").value;
         let sortmethod = document.getElementById("sortMethod").value;
@@ -44,4 +45,9 @@ window.onload = function() {
         var time = stop-start;
         document.getElementById("time").innerHTML = time + "ms";   
     }
+}
+export function swap(x, y) {
+    var b = valuesArray[y];
+    valuesArray[y] = valuesArray[x];
+    valuesArray[x] = b;
 }
