@@ -8,3 +8,6 @@
 * Heap Sort
 
 Run the program using a webserver or offline by deleting all module import/exports.
+
+Demo can be found here:
+https://siigdev.github.io/sortingalgorithmsjs/
