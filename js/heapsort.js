@@ -23,8 +23,8 @@ function buildHeap(valuesArray, n){
 
 function heapify(valuesArray, i, n){
     while(true){
-    var left = 2*i+1;
-    var right = 2*i+2;
+    var left = 2*i;
+    var right = 2*i+1;
     var max = i;
 
     if (left < n && valuesArray[left] > valuesArray[max]){
