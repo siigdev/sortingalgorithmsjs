@@ -47,7 +47,5 @@ window.onload = function() {
     }
 }
 export function swap(x, y) {
-    var b = valuesArray[y];
-    valuesArray[y] = valuesArray[x];
-    valuesArray[x] = b;
+    [valuesArray[x], valuesArray[y]] = [valuesArray[y], valuesArray[x]];
 }
