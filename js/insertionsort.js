@@ -15,7 +15,7 @@ export function insertionSort(valuesArray){
             swap(j, j-1);
             j = j-1;
         }
-        i = i+1
+        i = i+1;
     }
     return valuesArray;
 }

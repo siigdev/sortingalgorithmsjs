@@ -11,7 +11,7 @@ export function heapSort(valuesArray){
 
     for (var i = valuesArray.length-1; i > 0; i--){
         swap(0, i);
-        heapify(valuesArray, 0, i-1)
+        heapify(valuesArray, 0, i-1);
     }
     return valuesArray;
 }
@@ -23,21 +23,21 @@ function buildHeap(valuesArray, n){
 
 function heapify(valuesArray, i, n){
     while(true){
-    var left = 2*i;
-    var right = 2*i+1;
-    var max = i;
+        var left = 2*i;
+        var right = 2*i+1;
+        var max = i;
 
-    if (left < n && valuesArray[left] > valuesArray[max]){
-        max = left;
-    }
-    if (right < n && valuesArray[right] > valuesArray[max]){
-        max = right;
-    }
-    if (i == max) {
-        break;
-    }
-    swap(i, max);
-    i = max;
+        if (left < n && valuesArray[left] > valuesArray[max]){
+            max = left;
+        }
+        if (right < n && valuesArray[right] > valuesArray[max]){
+            max = right;
+        }
+        if (i == max) {
+            break;
+        }
+        swap(i, max);
+        i = max;
     }
 }
 

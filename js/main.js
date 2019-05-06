@@ -16,36 +16,36 @@ window.onload = function() {
         for (var i = 0; i<numberOfValues; i++) {
             let number = Math.floor((Math.random()*valuesRange)+0);
             valuesArray.push(number);
-        };
+        }
         var start = new Date().getTime();
         switch (sortmethod){
-            case "insertionsort":
-                document.getElementById("test").innerHTML = insertionSort(valuesArray);
-                break;
-            case "selectionsort":
-                document.getElementById("test").innerHTML = selectionSort(valuesArray);
-                break;
-            case "mergesort":
-                document.getElementById("test").innerHTML = mergeSort(valuesArray);
-                break;
-            case "bubblesort":
-                document.getElementById("test").innerHTML = bubbleSort(valuesArray);
-                break;
-            case "radixsort":
-                //document.getElementById("test").innerHTML = radixSort(valuesArray);
-                break;
-            case "quicksort":
-                document.getElementById("test").innerHTML = quickSort(valuesArray);
-                break;
-            case "heapsort":
-                document.getElementById("test").innerHTML = heapSort(valuesArray);
-                break;
+        case "insertionsort":
+            document.getElementById("test").innerHTML = insertionSort(valuesArray);
+            break;
+        case "selectionsort":
+            document.getElementById("test").innerHTML = selectionSort(valuesArray);
+            break;
+        case "mergesort":
+            document.getElementById("test").innerHTML = mergeSort(valuesArray);
+            break;
+        case "bubblesort":
+            document.getElementById("test").innerHTML = bubbleSort(valuesArray);
+            break;
+        case "radixsort":
+            //document.getElementById("test").innerHTML = radixSort(valuesArray);
+            break;
+        case "quicksort":
+            document.getElementById("test").innerHTML = quickSort(valuesArray);
+            break;
+        case "heapsort":
+            document.getElementById("test").innerHTML = heapSort(valuesArray);
+            break;
         }
         var stop = new Date().getTime();
         var time = stop-start;
         document.getElementById("time").innerHTML = time + "ms";   
-    }
-}
+    };
+};
 export function swap(x, y) {
     [valuesArray[x], valuesArray[y]] = [valuesArray[y], valuesArray[x]];
 }
