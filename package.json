@@ -1,0 +1,22 @@
+{
+  "name": "sortingalgorithmsjs",
+  "version": "1.0.0",
+  "description": "Sorting algorithms in vanilla js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siigdev/sortingalgorithmsjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siigdev/sortingalgorithmsjs/issues"
+  },
+  "homepage": "https://github.com/siigdev/sortingalgorithmsjs#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
