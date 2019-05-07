@@ -7,27 +7,26 @@ import { swap } from "./main.js";
 // Avg case: O(n log n)
 
 export function quickSort(valuesArray, low, high) {
-    var pivot;
-    var partitionvalue;
-    if (low < high){
-        pivot = high;
-        partitionvalue = partition(valuesArray, pivot, low, high);
-        quickSort(valuesArray, low, partitionvalue-1);
-        quickSort(valuesArray, partitionvalue+1, high);
+    if (low < high) {
+        pi = partition(valuesarray, low, high);
+        quickSort(valuesArray, low, pi);
+        quickSort(valuesArray, pi+1, high);
+        console.log("test");
     }
     return valuesArray;
 }
 
-function partition(valuesArray, pivot, low, high){
-    var pivotvalue = valuesArray[pivot];
-    var partitionvalue = low;
+function partition(valuesArray, low, high) {
+   pivot = valuesArray[low];
+   leftwall = low;
 
-    for (var i = low; i < high; i++){
-        if(valuesArray[i] < pivotvalue) {
-            swap(i, partitionvalue);
-            partitionvalue++;
+    for (i = low; i<= high-1; i++) {
+        if (valuesArray[i] < pivot) {
+            swap(valuesArray[i], valuesArray[leftwall]);
+            leftwall++;
         }
     }
-    swap(high, partitionvalue);    
-    return partitionvalue;
+    swap(pivot, valuesArray[leftwall]);
+    return leftwall
+
 }
