@@ -6,8 +6,7 @@
 
 export function quickSort(valuesArray, low, high) {
     let pi;
-    let len = valuesArray.length;
-    if (len > 1) {
+    if (valuesArray.length > 1) {
         
         pi = partition(valuesArray, low, high);
         
@@ -23,21 +22,19 @@ export function quickSort(valuesArray, low, high) {
 
 function partition(valuesArray, low, high) {
     let pivot = valuesArray[Math.floor((low + high) / 2)];
-    let i = low;
-    let j = high;
 
-    while(i <= j) {
-        while (valuesArray[i] < pivot) {
-            i++;
+    while(low <= high) {
+        while (valuesArray[low] < pivot) {
+            low++;
         }
-        while (valuesArray[j] > pivot) {
-            j--;
+        while (valuesArray[high] > pivot) {
+            high--;
         }
-        if (i <= j) {
-            [valuesArray[i], valuesArray[j]] = [valuesArray[j], valuesArray[i]];
-            i++;
-            j--;
+        if (low <= high) {
+            [valuesArray[low], valuesArray[high]] = [valuesArray[high], valuesArray[low]];
+            low++;
+            high--;
         }
     }
-    return i;
+    return low;
 }
