@@ -1,7 +1,7 @@
 # Sorting algorithms in plain javascript
 * Insertion Sort
 * Merge Sort
-* ~~Quick Sort~~ To be developed
+* Quick Sort
 * Selection Sort
 * Bubble Sort
 * ~~Radix Sort~~ To be developed
