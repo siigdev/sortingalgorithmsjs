@@ -5,7 +5,7 @@
 * Selection Sort
 * Bubble Sort
 * ~~Radix Sort~~ To be developed
-* ~~Heap Sort~~ To be developed
+* Heap Sort
 
 The program uses javascript ES6 modules which requires a running webserver. 
 
