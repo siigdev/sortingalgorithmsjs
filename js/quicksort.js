@@ -4,7 +4,7 @@
 // Best case: O(n log n)
 // Avg case: O(n log n)
 
-export function quickSort(valuesArray, low, high) {
+export function quickSort(valuesArray, low = 0, high = valuesArray.length-1) {
     let pi;
     if (valuesArray.length > 1) {
         

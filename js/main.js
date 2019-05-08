@@ -3,7 +3,7 @@ import {bubbleSort} from './bubblesort.js';
 import {heapSort} from './heapsort.js';
 import {mergeSort} from './mergesort.js';
 import {quickSort} from './quicksort.js';
-//import {radixSort} from './radixsort.js';
+import {radixSort} from './radixsort.js';
 import {selectionSort} from './selectionsort.js';
 
 var valuesArray = [];
@@ -32,10 +32,10 @@ window.onload = function() {
             document.getElementById("test").innerHTML = bubbleSort(valuesArray);
             break;
         case "radixsort":
-            //document.getElementById("test").innerHTML = radixSort(valuesArray);
+            document.getElementById("test").innerHTML = radixSort(valuesArray);
             break;
         case "quicksort":
-            document.getElementById("test").innerHTML = quickSort(valuesArray, 0, valuesArray.length-1);
+            document.getElementById("test").innerHTML = quickSort(valuesArray);
             break;
         case "heapsort":
             document.getElementById("test").innerHTML = heapSort(valuesArray);
