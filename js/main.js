@@ -35,7 +35,7 @@ window.onload = function() {
             //document.getElementById("test").innerHTML = radixSort(valuesArray);
             break;
         case "quicksort":
-            document.getElementById("test").innerHTML = quickSort(valuesArray);
+            document.getElementById("test").innerHTML = quickSort(valuesArray, 0, valuesArray.length-1);
             break;
         case "heapsort":
             document.getElementById("test").innerHTML = heapSort(valuesArray);
