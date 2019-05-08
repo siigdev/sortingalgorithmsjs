@@ -43,7 +43,7 @@ window.onload = function() {
         }
         var stop = new Date().getTime();
         var time = stop-start;
-        document.getElementById("time").innerHTML = time + "ms";   
+        document.getElementById("time").innerHTML = `${time} ms`;   
     };
 };
 export function swap(x, y) {
