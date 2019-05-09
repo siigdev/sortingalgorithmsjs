@@ -5,3 +5,12 @@ export function radixSort(valuesArray, d) {
         //....
     }
 }
+function getMax(valuesArray){
+    let max = 0;
+    for (let i = 0; i < valuesArray.length; i++) {
+        if (max < valuesArray[i]) {
+            max = valuesArray[i];
+        }
+    }
+    return max;
+}
