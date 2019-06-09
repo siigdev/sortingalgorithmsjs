@@ -1,3 +1,9 @@
+// RADIX SORT
+// https://en.wikipedia.org/wiki/Radixsort
+// Worst case: O(n * k)
+// Best case: O(n * k)
+// Avg case: O(n * k)
+
 export function radixSort(valuesArray, d) {
     let n = valuesArray.length;
     let largest = Math.max(valuesArray);
@@ -14,3 +20,4 @@ function getMax(valuesArray){
     }
     return max;
 }
+
