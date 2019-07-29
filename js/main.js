@@ -6,46 +6,38 @@ import {quickSort} from './quicksort.js';
 import {radixSort} from './radixsort.js';
 import {selectionSort} from './selectionsort.js';
 
-var valuesArray = [];
+let arr = [];
 window.onload = function() {
     document.getElementById("generate").onclick = function(){
-        valuesArray = [];
+        arr = [];
         let numberOfValues = document.getElementById("arraySize").value;
         let valuesRange = document.getElementById("valueRange").value;
         let sortmethod = document.getElementById("sortMethod").value;
         for (var i = 0; i<numberOfValues; i++) {
             let number = Math.floor((Math.random()*valuesRange)+0);
-            valuesArray.push(number);
+            arr.push(number);
         }
-        var start = new Date().getTime();
-        switch (sortmethod){
-        case "insertionsort":
-            document.getElementById("test").innerHTML = insertionSort(valuesArray);
-            break;
-        case "selectionsort":
-            document.getElementById("test").innerHTML = selectionSort(valuesArray);
-            break;
-        case "mergesort":
-            document.getElementById("test").innerHTML = mergeSort(valuesArray);
-            break;
-        case "bubblesort":
-            document.getElementById("test").innerHTML = bubbleSort(valuesArray);
-            break;
-        case "radixsort":
-            document.getElementById("test").innerHTML = radixSort(valuesArray);
-            break;
-        case "quicksort":
-            document.getElementById("test").innerHTML = quickSort(valuesArray);
-            break;
-        case "heapsort":
-            document.getElementById("test").innerHTML = heapSort(valuesArray);
-            break;
+        let start = new Date().getTime();
+
+        function sortArray(type){
+            let algorithms = {
+                'insertionsort': () => insertionSort(arr),
+                'selectionsort': () => selectionSort(arr),
+                'mergesort': () => mergeSort(arr),
+                'bubblesort': () => bubbleSort(arr),
+                'heapsort': () => heapSort(arr),
+                'quicksort': () => quickSort(arr),
+                'radixsort': () => radixSort(arr),
+            };
+            return algorithms[type]();
         }
+
+        document.getElementById("test").innerHTML = sortArray(sortmethod);
         var stop = new Date().getTime();
         var time = stop-start;
         document.getElementById("time").innerHTML = `${time} ms`;   
     };
 };
 export function swap(x, y) {
-    [valuesArray[x], valuesArray[y]] = [valuesArray[y], valuesArray[x]];
+    [arr[x], arr[y]] = [arr[y], arr[x]];
 }
